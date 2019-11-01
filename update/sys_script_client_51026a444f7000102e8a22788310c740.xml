@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>ar</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Auto Populate User Details</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   g_form.setValue('name',g_user.getFullName());
+  var obj2=new GlideAjax('getUerDetails');
+ obj2.addParam('sysparm_name','returnid');
+ obj2.addParam('abc',g_user.getFullName());
+ obj2.getXML(calluser2);
+ function calluser2(response)
+ {
+	 var val=response.responseXML.documentElement.getAttribute('answer');
+	    g_form.setValue('id',val);
+ }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-25 05:35:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>51026a444f7000102e8a22788310c740</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Auto Populate User Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="nofeedue" source="x_331782_nofeedue">041165b94f0c80102e8a22788310c705</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="nofeedue">041165b94f0c80102e8a22788310c705</sys_scope>
+        <sys_update_name>sys_script_client_51026a444f7000102e8a22788310c740</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-25 05:50:51</sys_updated_on>
+        <table>x_331782_nofeedue_nodue</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

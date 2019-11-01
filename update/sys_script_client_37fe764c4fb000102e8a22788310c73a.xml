@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>ar</field>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>setDepatmentReadOnly</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   g_form.setReadOnly('branch', true);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-25 07:41:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>37fe764c4fb000102e8a22788310c73a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>setDepatmentReadOnly</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="nofeedue" source="x_331782_nofeedue">041165b94f0c80102e8a22788310c705</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="nofeedue">041165b94f0c80102e8a22788310c705</sys_scope>
+        <sys_update_name>sys_script_client_37fe764c4fb000102e8a22788310c73a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-25 07:47:47</sys_updated_on>
+        <table>x_331782_nofeedue_nodue</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="nodue" max_length="40" name="x_331782_nofeedue_nodue" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="REGISTAR'S OFFICE/ACCOUNTS" max_length="40" name="account" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="APPLIED" label="STATE OF APPLICATION" max_length="40" name="application_status" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="ALUMNI REGISTRATION" max_length="40" name="ar" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="DEPARTMENT" mandatory="true" max_length="40" name="branch" type="string">
+            <choice>
+                <element inactive_on_update="false" label="CSE" sequence="0" value="cse"/>
+                <element inactive_on_update="false" label="ECE" sequence="1" value="ece"/>
+                <element inactive_on_update="false" label="EEE" sequence="2" value="eee"/>
+                <element inactive_on_update="false" label="CE" sequence="3" value="ce"/>
+                <element inactive_on_update="false" label="MECH" sequence="4" value="mech"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="COMPUTER CENTER" max_length="40" name="cc" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="CENTRAL LIBRARY" max_length="40" name="cl" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="B.Tech" label="COURSE" max_length="40" name="degree" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="DEPARTMENT LIBRARY" max_length="40" name="dl" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="DEPARTMENT PLACEMENT INCHARGE" max_length="40" name="dpi" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="FED/PG-OFFICE" max_length="40" name="fed" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="HOD CONCERNED" max_length="40" name="hod" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="HOSTEL" max_length="40" name="hostel" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ID" max_length="40" name="id" read_only="true" reference="sys_user" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="IRP (PLACEMENT CELL)" max_length="40" name="irp" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="NAME" max_length="40" name="name" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="PENDING" label="PHYSICAL EDUCATION" max_length="40" name="pe" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="2016-2020" label="YEAR OF STUDY" max_length="40" name="study" read_only="true" type="string"/>
+    </element>
+</database>
